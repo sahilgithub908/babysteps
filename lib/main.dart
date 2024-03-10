@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 40,left: 40),
-              child: Text("\nBabySteps",style: TextStyle(color: Colors.white,fontSize: 50,fontWeight: FontWeight.w300),),
+              child: Text("\nWelcome\nBack!",style: TextStyle(color: Colors.white,fontSize: 50,fontWeight: FontWeight.w300),) ,
             )
             ,         Container(
               padding: EdgeInsets.symmetric(horizontal: 40,vertical: 10),
@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Sign In",style: TextStyle(fontSize: 45,fontWeight: FontWeight.w400),),
+                  Text("",style: TextStyle(fontSize: 45,fontWeight: FontWeight.w400),),
                   SizedBox(height: 15,),
                   TextField(
                     decoration: InputDecoration(
@@ -62,26 +62,19 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   Align(
                     alignment: Alignment.centerRight,
-                    child: TextButton(onPressed: (){},child: Text("Forgot password?"),),
+                    child: TextButton(onPressed: (){},child: Text("Forgot password?", style: TextStyle(color: Colors.black,fontSize:14,)),),
                   ),
                   Center(
                     child: ElevatedButton(
                         style: TextButton.styleFrom(
                             backgroundColor: Colors.black,
-                            padding: EdgeInsets.symmetric(vertical: 5,horizontal: 60)
+                            padding: EdgeInsets.symmetric(vertical: 5,horizontal: 130)
                         ),
                         onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context)=>LandingPage()));
                         }, child: Text("Sign In")),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      TextButton(onPressed: (){
-                        Navigator.push(context,MaterialPageRoute(builder: (context)=>SignUpPage()));
-                      }, child: Text("Or Create Account -->"))
-                    ],
-                  )
+
                 ],
               ),
             )

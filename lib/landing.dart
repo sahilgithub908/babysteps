@@ -47,7 +47,7 @@ class _LandingPageState extends State<LandingPage> {
                     child: ElevatedButton(
                         style: TextButton.styleFrom(
                             backgroundColor: Colors.black,
-                            padding: EdgeInsets.symmetric(vertical: 5,horizontal: 60)
+                            padding: EdgeInsets.symmetric(vertical: 5,horizontal: 130)
                         ),
                         onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
@@ -58,7 +58,7 @@ class _LandingPageState extends State<LandingPage> {
                     children: [
                       TextButton(onPressed: (){
                         Navigator.push(context,MaterialPageRoute(builder: (context)=>SignUpPage()));
-                      }, child: Text("Or Create Account -->"))
+                      }, child: Text("                                                Or Create Account >", style: TextStyle(color: Colors.black,fontSize:14,)))
                     ],
                   )
                 ],

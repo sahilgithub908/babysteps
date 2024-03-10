@@ -92,7 +92,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: ElevatedButton(
                         style: TextButton.styleFrom(
                             backgroundColor: Colors.black,
-                            padding: EdgeInsets.symmetric(vertical: 5,horizontal: 60)
+                            padding: EdgeInsets.symmetric(vertical: 5,horizontal: 130)
                         ),
                         onPressed: (){
                           if(password.text != confirmPassword.text){
@@ -116,7 +116,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       Text("Already have an account?"),
                       TextButton(onPressed: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
-                      }, child: Text("Sign In ->"))
+                      }, child: Text("                     Sign In >", style: TextStyle(color: Colors.black,fontSize:14,)))
                     ],
                   )
                 ],
