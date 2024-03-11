@@ -30,11 +30,11 @@ class _LoginPageState extends State<LoginPage> {
             )
             ,         Container(
               padding: EdgeInsets.symmetric(horizontal: 40,vertical: 10),
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.45),
+              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.35),
               width: double.infinity,
-              height: 450,
+              height: 550,
               decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.yellow[50],
                   borderRadius: BorderRadius.only(topRight: Radius.circular(50),topLeft: Radius.circular(0))
               ),
               child: Column(

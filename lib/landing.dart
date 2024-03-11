@@ -21,6 +21,7 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor: Colors.white24,
       body:SingleChildScrollView(
         child: Stack(
@@ -31,17 +32,17 @@ class _LandingPageState extends State<LandingPage> {
             )
             ,         Container(
               padding: EdgeInsets.symmetric(horizontal: 40,vertical: 10),
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.75),
+              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.72),
               width: double.infinity,
-              height: 750,
+              height: 720,
               decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.yellow[50],
                   borderRadius: BorderRadius.only(topRight: Radius.circular(50),topLeft: Radius.circular(0))
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Get involved with people and events around you.\n",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400),),
+                  Text("\nGet involved with people and events around you.\n",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400),),
 
                   Center(
                     child: ElevatedButton(
