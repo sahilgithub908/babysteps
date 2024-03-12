@@ -24,6 +24,17 @@ class _LandingPageState extends State<LandingPage> {
       
       backgroundColor: Colors.white24,
       body:SingleChildScrollView(
+        child: Container(
+        decoration: BoxDecoration(
+        image: DecorationImage(
+        image: AssetImage('images/imgbg.jpeg'), // Replace with your image path
+    fit: BoxFit.cover,
+    colorFilter: ColorFilter.mode(
+    Colors.black.withOpacity(0.2), // Adjust opacity here
+    BlendMode.dstATop,
+    ),
+    ),
+    ),
         child: Stack(
           children: [
             Padding(
@@ -67,6 +78,7 @@ class _LandingPageState extends State<LandingPage> {
             )
           ],
         ),
+      ),
       ),
     );
   }
